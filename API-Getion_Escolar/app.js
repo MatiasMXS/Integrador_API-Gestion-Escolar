@@ -1,22 +1,34 @@
+require("dotenv").config();
 const express = require('express');
 const app = express();
 const dbconnect = require('./config/db'); // Importar la conexión a la base de datos
 const estudiantesRoutes = require('./routes/estudiantes'); // Importar las rutas de libros
+const cors =require ('cors');
 
 app.use(express.json()); // Middleware para interpretar JSON
 
-// Usar las rutas de libros
-app.use(estudiantesRoutes);
+//CORS
+app.use(cors())
+// Usar las rutas de tareas
+app.use("/api", tareasRoutes);
 
-// Probar la conexión a la base de datos y arrancar el servidor
-dbconnect().then(() => {
-    app.listen(3000, () => {
-        console.log('El servidor está corriendo en el puerto 3000');
+app.get('/api/test', (req,res) =>{
+    res.send('La aplicacion está funcionando correctamente')
+  });
+  
+  
+  
+  // Probar la conexión a la base de datos y arrancar el servidor
+  dbconnect()
+    .then(() => {
+      console.log("El servidor está corriendo");
+    })
+    .catch((err) => {
+      console.error(
+        "No se pudo iniciar el servidor debido a un error en la base de datos"
+      );
     });
-}).catch(err => {
-    console.error('No se pudo iniciar el servidor debido a un error en la base de datos');
-});
-
+  module.exports = app;
 
 /*
 -Deploy Vercel
