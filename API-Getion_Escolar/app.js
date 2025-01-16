@@ -10,7 +10,7 @@ app.use(express.json()); // Middleware para interpretar JSON
 //CORS
 app.use(cors())
 // Usar las rutas de tareas
-app.use("/api", tareasRoutes);
+app.use("/api", estudiantesRoutes);
 
 app.get('/api/test', (req,res) =>{
     res.send('La aplicacion está funcionando correctamente')
