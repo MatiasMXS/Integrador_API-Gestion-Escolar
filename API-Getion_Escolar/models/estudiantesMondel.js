@@ -15,6 +15,7 @@ const estudiantesSchema = new Schema({
     required: true,
     unique: true,
   },
+  myFile : String,
   cursos: [
     {
       type: String,
