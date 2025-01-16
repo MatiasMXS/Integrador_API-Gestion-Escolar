@@ -31,7 +31,6 @@ app.get('/api/test', (req,res) =>{
   module.exports = app;
 
 /*
--Deploy Vercel
 -diseñar que mas hacer
 -Reed me
 +Midelleware
