@@ -98,7 +98,9 @@ Para Crear o actualizar un estudiante,la consulta debe tener la siguiente estruc
 
 ## 👨‍💻**Créditos y despliegue**
 Este proyecto fue desarrollado por Matías Moreno como parte de la entrega del trabajo Integrador del curso del MERN Stack del POLO Tecnologico de la Provincia de La Rioja
+
 Desarrollador: Matías Moreno
+
 Cuenta de GitHUB: https://github.com/MatiasMXS
 
 
