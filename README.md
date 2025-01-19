@@ -77,28 +77,28 @@ con ese link mas el método y la ruta correcta se pueden hacer las consultas que
 | GET | `/estudiantes/curso/:curso` | Búsqueda de todos los estudiantes Inscriptos a un curso |
 | GET | `/estudiantes/nombre/:nombre` | Búsqueda de Estudiantes según el nombre |
 
-#🔍*Validaciones*
+# 🔍*Validaciones*
 Los endpoints de POST y PUT para crear estudiantes y para actualizar uno ya existente, cuentan con validaciones que no permiten crear o actualizar estudiantes si:
 - tiene el mismo mail que uno ya existente en la Base de datos
 - Se inscribe en un curso no existente. Los únicos cursos existentes son: - **Matemática, Historia, Ciencias, Arte**
 - Se inscribe o se coloca un mismo curso valido mas de una vez
 
-#*Estructura*
+# *Estructura*
 Para Crear o actualizar un estudiante,la consulta debe tener la siguiente estructura:
 ```bash
 {
   "nombre": "Matias",
   "apellido": "Moreno",
   "email": "matias.moreno@example.com",
-  "cursos": ["Ciencias, Historia"],      #arry de cusos incriptos
+  "cursos": ["Ciencias, Historia"],      #array de cusos incriptos
   "myFile": "data:image/jpeg;base64,"    #Imagen en Base64    
 }
 ```
 ---
 
-##👨‍💻**Créditos y despliegue**
+## 👨‍💻**Créditos y despliegue**
 Este proyecto fue desarrollado por Matías Moreno como parte de la entrega del trabajo Integrador del curso del MERN Stack del POLO Tecnologico de la Provincia de La Rioja
-Desarrollador: MAtías Moreno
+Desarrollador: Matías Moreno
 Cuenta de GitHUB: https://github.com/MatiasMXS
 
 
