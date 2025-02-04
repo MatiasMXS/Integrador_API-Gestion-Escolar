@@ -11,7 +11,7 @@ const estudiantesSchema = new Schema({
     required: true,
   },
   edad: {
-    type: int,
+    type: Number,
     required: true,
   },
   telefono: {
