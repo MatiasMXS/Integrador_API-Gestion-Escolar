@@ -10,6 +10,14 @@ const estudiantesSchema = new Schema({
     type: String,
     required: true,
   },
+  edad: {
+    type: int,
+    required: true,
+  },
+  telefono: {
+    type: String,
+    required: true,
+  },
   email: {
     type: String,
     required: true,
